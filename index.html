@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racheal Aina Portfolio - Data Analyst | Data Scientist </title>
+    <!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+  rel="stylesheet"
+/>
+<link rel="icon" href="img/rachel.png" type="image/png" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+                
+                
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+  
+
+
+  <style>
+ 
+ 
+
+
+ @import url('https://fonts.cdnfonts.com/css/product-sans');                                              
+                                                
+    body{
+                                                                          font-family: 'Product Sans', sans-serif;
+                                                
+                                                
+                       background-color: black;                         
+       
+    }
+
+
+    html, body {
+ 
+    overflow-x: hidden;
+}
+.container {
+ 
+    overflow-x: hidden;
+}
+
+
+    .navbar {
+    --mdb-navbar-box-shadow: none
+    --mdb-navbar-padding-top: 0.5625rem;
+    --mdb-navbar-brand-img-margin-right: none;
+    box-shadow: none;
+    padding-top: none;
+  
+}
+
+
+.nav-link.active {
+    color: #EE364D;
+  font-weight: bold;
+  text-decoration:underline;
+ 
+  background-repeat: no-repeat;
+}
+
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .navbar-nav > li{
+    margin-left:8px;
+    margin-right:8px;
+  }
+
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+  .responsive-font-example {
+    font-size: 56px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .responsive-font-example {
+    font-size: 30px;
+  }
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: black;
+    color:black;
+    border-radius: 0px 12px 12px 0px;
+    border-bottom: 3px solid #EE364D;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover {
+   
+    border-radius:12px;
+    
+}
+
+
+
+    .responsive-heading {
+    font-weight: 800;
+    font-size: 2.5rem; /* Adjust as needed */
+  
+    color: black;
+    line-height: 1.2; /* Adjust as needed */
+}
+
+@media (max-width: 575.98px) {
+    .responsive-heading {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .responsive-heading {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .responsive-heading {
+        font-size: 3rem;
+        line-height: 1.3;
+    }
+}
+
+/* Add more media queries as needed */
+
+       
+    .items{
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .items::-webkit-scrollbar{
+        display: none;
+    } 
+    
+    .items .options{
+        min-width: 900px;
+       
+       
+        margin: 10px;
+        
+           
+        position: relative;
+    
+    }
+    
+
+
+  .bannerwall {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.bannerwall{
+  
+  min-height: 1020px;
+}
+
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #d946ef, #8b5cf6); /* bright pink to neon purple */
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+  box-shadow: 
+    0 0 10px #ff00cc,
+    0 0 20px #ff00cc,
+    0 0 30px #3333ff,
+    0 0 40px #3333ff;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    position: relative;
+  }
+
+  .scroll-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 60s linear infinite;
+  }
+
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* CSS for image zoom effect */
+.image-link {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.zoomable {
+    transition: transform 0.3s ease;
+    transform: scale(1); /* Normal state */
+}
+
+.zoomable:hover {
+    transform: scale(1.1); /* Zoomed state */
+}
+
+
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border-radius: 5px;
+        background: linear-gradient(45deg, pink, purple);
+        z-index: -1;
+ 
+    }
+
+
+      .glow-card {
+      background: linear-gradient(135deg, #f953c6, #8e2de2);
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(249, 83, 198, 0.6), 0 0 20px rgba(142, 45, 226, 0.5);
+    }
+
+    .saveit {
+      background: linear-gradient(90deg, #140423, #2c0f4d, #140423);
+    }
+
+    .card-title {
+      font-weight: 700;
+    }
+
+    .display-4 {
+      font-size: 2.5rem;
+    }
+
+/* Initial state: progress bars start at 0 width */
+  .progress-bar.progress-bar-init {
+    width: 0;
+    transition: width 2s ease-in-out;
+  }
+
+  /* When the init class is removed, the width from inline style or data-width applies */
+  .progress-bar {
+    transition: width 2s ease-in-out;
+  }
+
+ .styled-list {
+    list-style: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f953c6, #8e2de2);
+    box-shadow: 0 0 15px rgba(249, 83, 198, 0.4), 0 0 15px rgba(142, 45, 226, 0.4);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+   
+    margin: auto;
+  }
+
+  .styled-list li {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .styled-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(249, 83, 198, 0.5), 0 0 10px rgba(142, 45, 226, 0.5);
+  }
+
+     .table-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #f953c6, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  .table-wrapper {
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: 0 0 20px rgba(249, 83, 198, 0.3), 0 0 20px rgba(142, 45, 226, 0.3);
+    padding: 1rem;
+  }
+
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    color: white;
+  }
+
+  thead {
+    background: linear-gradient(90deg, #f953c6, #8e2de2);
+  }
+
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  tr:hover {
+    background-color: rgba(255,255,255,0.05);
+  }
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .table-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #f953c6, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .download-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(90deg, #8e2de2, #f953c6);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  .download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(249, 83, 198, 0.4), 0 0 15px rgba(142, 45, 226, 0.4);
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .table-header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .table-title {
+      font-size: 1.5rem;
+    }
+
+    .download-btn {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+    }
+  }
+
+@media (max-width: 600px) {
+      .recommendation-section {
+        padding: 1rem;
+      }
+      .recommendation-title {
+        font-size: 1.5rem;
+      }
+      .styled-list {
+        font-size: 1rem;
+      }
+    }
+
+    .recommendation-section {
+    
+      margin: auto;
+      padding: 1.5rem;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #f953c6, #8e2de2);
+      box-shadow: 0 0 15px rgba(249, 83, 198, 0.4), 0 0 15px rgba(142, 45, 226, 0.4);
+    }
+
+    .recommendation-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1rem;
+     
+
+      color:white;
+    }
+
+
+
+  </style>
+</head>
+<body>
+    
+  
+<div class="bannerwall">
+  
+<nav class="navbar navbar-expand-lg navbar">
+  <div class="container" >
+    <a class="navbar-brand" href="#" >
+        <img src="img/rachel2.png" class="img-fluid" width="80px">
+    </a>
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      style="background-color:transparent; border:3px solid rgb(183, 0, 255);"
+    >
+      <i class="fas fa-bars" style="color:rgb(207, 0, 248);"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  style="  color:white; font-size:16px;" aria-current="page" href="#aboutus">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"   style="  color:white; font-size:16px;" href="#services">What I Do</a>
+        </li>
+
+             <li class="nav-item">
+          <a class="nav-link"  style="  color:white; font-size:16px;" href="#skills"> Skills </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"  style="  color:white; font-size:16px;" href="#services">Projects</a>
+        </li>
+
+   
+
+      </ul>
+    
+
+<!-- From Uiverse.io by Creatlydev --> 
+<button  class="button" style="--clr: #7808d0">
+
+  <a style="text-decoration: none; color: white;" target="_blank" href="https://wa.me/447466468691" > Hire Me </a>
+</button>
+
+
+     
+    </div>
+  </div>
+</nav>
+
+ <div style="margin-bottom:90px;"> </div>
+
+
+ <div class="container py-5">
+  <div class="row justify-content-center align-items-center ">
+    
+    <!-- Left Column (Text Content) -->
+    <div class="col-lg-6 col-md-10 mb-4">
+      <h1 class="fw-bold" style="color: white; font-size: 48px;">
+        Hi, My name is 
+        <strong style="color: #EE364D;">Racheal Aina</strong>
+      </h1>
+
+        <h2 style="color: white; font-size: 30px;">
+        I'm a <strong style="color:orangered;">Data Analyst & Data Scientist</strong><br>
+        based in <strong style="color:rgb(231, 8, 231);">Wales, United Kingdom (UK)</strong>
+      </h2>
+
+      <!-- Button -->
+      <button class="button mt-4" style="--clr: #7808d0">
+        <span class="button__icon-wrapper">
+          <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+            <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+          </svg>
+        </span>
+        <a style="text-decoration: none; color: white;" target="_blank" href="#">Let's Work Together</a>
+      </button>
+    </div>
+
+    <!-- Right Column (Image) -->
+    <div class="col-lg-6 col-md-10">
+      <img src="img/picture2.png" class="img-fluid mx-auto d-block" alt="Racheal Aina">
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<div style="margin-top:80px"></div>
+
+    <div class="container" id="about">
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3"  >
+
+                <h1 style="color:white;"> About Me </h1>
+            <!-- From Uiverse.io by Creatlydev --> 
+<button  class="button" style="--clr: #7808d0">
+  <span class="button__icon-wrapper">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg"
+      width="10"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+  
+  </span>
+  <a style="text-decoration: none; color: white;" target="_blank" href="#" > Let's Work Together </a>
+</button>
+
+
+            </div>
+
+            <div class="col-md-8 mb-3"  >
+
+               <p style="color:white; text-align:justify; font-size: 20px;">
+              I am a results-driven <strong style="color:rgb(252, 0, 231);"> Data Scientist and Data Analyst </strong> with a strong background in data-driven decision-making, predictive modeling, and business intelligence.
+ My expertise lies in <strong style="color:orangered;">  transforming raw data into actionable insights that drive efficiency, optimize processes, and enhance strategic decision-making. </strong> I deliver actionable insights, engaging interfaces, responsive websites, and compelling visuals, combining technical skill and creative vision to drive business success and enhance user satisfaction. <br> <br>
+              With a foundation in public health and data science, I specialize in data collection, cleaning, and analysis, leveraging advanced statistical and machine learning techniques to extract meaningful insights. I excel at communicating complex technical findings to non-technical stakeholders, ensuring seamless collaboration across teams.
+.</p>
+            </div>
+
+
+            <hr style="color:white; background-color:white;">
+
+     
+        </div>
+
+    </div>
+
+
+
+<section class="py-5">
+    <div class="container text-white">
+      <h2 class="mb-5 text-center fw-bold">Key Achievements</h2>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Improved Sales Forecasting</h5>
+              <p class="card-text">Enhanced forecasting by 20%, reduced inventory carrying costs by 15%.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Enhanced Operational Efficiency</h5>
+              <p class="card-text">Streamlined collaboration, cutting project time by 25% and increasing efficiency by 10%.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Boosted Marketing Effectiveness</h5>
+              <p class="card-text">Implemented ML segmentation, improving campaign effectiveness by 30%.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Optimized Data Quality</h5>
+              <p class="card-text">Achieved 98% data accuracy, reducing integration errors by 15%.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Cost Optimization</h5>
+              <p class="card-text">Reduced operational expenses by 15%, while increasing profit margins by 10%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+<section class=" py-5" style=" color: white; ">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="color: #ff00cc; text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;">Technical Skills</h2>
+
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-6">
+
+        <h5 class="text-uppercase mb-3" style="color: #ff6ec4;">Data Analysis & Visualization</h5>
+        <div class="mb-3">
+          <strong>Power BI</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="90" style="background: linear-gradient(to right, #ff00cc, #3333ff); box-shadow: 0 0 8px #ff00cc;" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>Tableau</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="85" style="background: linear-gradient(to right, #ff6ec4, #7873f5); box-shadow: 0 0 8px #ff6ec4;" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>Excel</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="95" style="background: linear-gradient(to right, #f83600, #f9d423); box-shadow: 0 0 8px #f9d423;" aria-valuemin="0" aria-valuemax="100">95%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>SQL</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="90" style="background: linear-gradient(to right, #da1b60, #ff8a00); box-shadow: 0 0 8px #ff8a00;" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+
+        <h5 class="text-uppercase mt-4 mb-3" style="color: #ff6ec4;">Data Management & Storage</h5>
+        <div class="mb-3">
+          <strong>Power Automate</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="80" style="background: linear-gradient(to right, #ff00cc, #ff6ec4); box-shadow: 0 0 8px #ff00cc;" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>ETL Processes</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="85" style="background: linear-gradient(to right, #ff8a00, #da1b60); box-shadow: 0 0 8px #ff8a00;" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-6">
+
+        <h5 class="text-uppercase mb-3" style="color: #ff6ec4;">Programming & Machine Learning</h5>
+        <div class="mb-3">
+          <strong>Python</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="90" style="background: linear-gradient(to right, #fc466b, #3f5efb); box-shadow: 0 0 8px #fc466b;" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>R</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="85" style="background: linear-gradient(to right, #00c6ff, #0072ff); box-shadow: 0 0 8px #00c6ff;" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>SQL</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="90" style="background: linear-gradient(to right, #f7971e, #ffd200); box-shadow: 0 0 8px #ffd200;" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+
+        <h5 class="text-uppercase mt-4 mb-3" style="color: #ff6ec4;">Modeling & Business Intelligence</h5>
+        <div class="mb-3">
+          <strong>Statistical Analysis</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="85" style="background: linear-gradient(to right, #00c9ff, #92fe9d); box-shadow: 0 0 8px #00c9ff;" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>Machine Learning Algorithms</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="80" style="background: linear-gradient(to right, #fa709a, #fee140); box-shadow: 0 0 8px #fa709a;" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>Data-Driven Strategy</strong>
+          <div class="progress rounded-pill" style="height: 15px; background-color: #1f1f1f;">
+            <div class="progress-bar animated-bar progress-bar-init" role="progressbar" data-width="75" style="background: linear-gradient(to right, #f953c6, #b91d73); box-shadow: 0 0 8px #f953c6;" aria-valuemin="0" aria-valuemax="100">75%</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">           
+     <hr style="color:white; background-color:white;">
+
+     </div>
+
+
+     
+<section class=" py-5" style=" color: white; ">
+  <div class="container">
+    <h2 class="text-center fw-bold " style=" font-size:44px; color: #f1f500; text-shadow: 0 0 10px #fceb00, 0 0 20px #dde001;">RECENT PROJECTS</h2>
+<h4 style="text-align: center; color: #ff00cc; text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;"> Vintage Couture Sales Analysis Dashboard </h4>
+
+
+
+<h4 style="color:white;"> Overview </h4>
+ <hr style="color:white; background-color:white;">
+<p style="color:white; font-size:18px; ">
+
+This project analyzes sales performance and customer demographics for Vintage Couture, a boutique retailer specializing in sustainable and retro fashion. The business operates both online and across multiple cities, offering unique vintage apparel.
+
+The goal of the analysis is to deliver clear, actionable insights through an interactive Excel dashboard to support strategic decisions in inventory planning, customer engagement, and marketing.
+
+
+</p>
+
+
+<br>
+
+<h4 style="color:white;"> Objectives </h4>
+ <hr style="color:white; background-color:white;">
+
+<ul class="styled-list">
+  <li>📊 Calculate total revenue and identify top-performing months</li>
+  <li>🧍‍♂️ Classify customers by age group and gender</li>
+  <li>🛍️ Compare performance across product categories and regions</li>
+  <li>💳 Analyze differences in sales channels</li>
+   <li>📈 Present insights in a dynamic, filterable dashboard</li>
+
+</ul>
+
+
+ <br><br>
+
+<h4 style="color:white;"> Data Preparation (Raw Data) </h4>
+ <hr style="color:white; background-color:white;">
+
+ 
+ <div class="table-header">
+  <h2 class="table-title">Vintage Clothing Sales Data </h2>
+ <a href="data/original_data.xlsx" class="download-btn">⬇️ Download Data</a>
+</div>
+
+
+
+<div class="table-wrapper">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Customer ID</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Payment ID</th>
+        <th>Channel</th>
+        <th>Product Category</th>
+        <th>Size</th>
+        <th>Qty</th>
+        <th>Amount</th>
+        <th>Location ID</th>
+        <th>B2B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>171-1029312-3038738</td><td>CS-1029312</td><td>12-04-22</td><td>Delivered</td><td>2</td><td>Store</td><td>Denim</td><td>XXL</td><td>1</td><td>376</td><td>LC01</td><td>FALSE</td></tr>
+      <tr><td>405-2183842-2225946</td><td>CS-2183842</td><td>12-04-22</td><td>Delivered</td><td>3</td><td>Online</td><td>Suit</td><td>L</td><td>1</td><td>1449</td><td>LC02</td><td>FALSE</td></tr>
+      <tr><td>171-1641533-8921966</td><td>CS-1641533</td><td>12-04-22</td><td>Delivered</td><td>3</td><td>Store</td><td>Suit</td><td>S</td><td>1</td><td>453</td><td>LC03</td><td>FALSE</td></tr>
+      <tr><td>404-7490807-6300351</td><td>CS-7490807</td><td>12-04-22</td><td>Delivered</td><td>1</td><td>Online</td><td>Suit</td><td>M</td><td>1</td><td>729</td><td>LC04</td><td>FALSE</td></tr>
+      <tr><td>403-9293516-4577154</td><td>CS-9293516</td><td>12-04-22</td><td>Delivered</td><td>2</td><td>Store</td><td>Denim</td><td>XXL</td><td>1</td><td>544</td><td>LC02</td><td>FALSE</td></tr>
+      <tr><td>171-5561216-3398711</td><td>CS-5561216</td><td>12-04-22</td><td>Delivered</td><td>3</td><td>Vendor</td><td>Denim</td><td>M</td><td>1</td><td>435</td><td>LC02</td><td>FALSE</td></tr>
+      <tr><td>408-2935263-2935550</td><td>CS-2935263</td><td>12-04-22</td><td>Delivered</td><td>2</td><td>Online</td><td>Denim</td><td>XL</td><td>1</td><td>385</td><td>LC06</td><td>FALSE</td></tr>
+      <tr><td>408-0265357-4939534</td><td>CS-265357</td><td>12-04-22</td><td>Delivered</td><td>1</td><td>Online</td><td>Suit</td><td>XL</td><td>1</td><td>786</td><td>LC09</td><td>FALSE</td></tr>
+      <tr><td>403-9268874-7296313</td><td>CS-9268874</td><td>12-04-22</td><td>Delivered</td><td>2</td><td>Store</td><td>Suit</td><td>M</td><td>1</td><td>911</td><td>LC06</td><td>FALSE</td></tr>
+      <tr><td>407-0442660-2736366</td><td>CS-442660</td><td>12-04-22</td><td>Delivered</td><td>2</td><td>Online</td><td>Suit</td><td>M</td><td>1</td><td>967</td><td>LC10</td><td>FALSE</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+<br><br>
+
+<div class="table-header">
+  <h2 class="table-title"> Location & Region Overview</h2>
+ <a href="data/original_data.xlsx" class="download-btn">⬇️ Download Data</a>
+</div>
+
+<div class="table-wrapper">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Location ID</th>
+        <th>State</th>
+        <th>Region</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>LC01</td><td>Abia</td><td>South-East</td></tr>
+      <tr><td>LC02</td><td>Adamawa</td><td>North-East</td></tr>
+      <tr><td>LC03</td><td>Akwa Ibom</td><td>South-South</td></tr>
+      <tr><td>LC04</td><td>Anambra</td><td>South-East</td></tr>
+      <tr><td>LC05</td><td>Bauchi</td><td>North-East</td></tr>
+      <tr><td>LC06</td><td>Bayelsa</td><td>South-South</td></tr>
+      <tr><td>LC07</td><td>Benue</td><td>North-Central</td></tr>
+      <tr><td>LC08</td><td>Borno</td><td>North-East</td></tr>
+      <tr><td>LC09</td><td>Cross River</td><td>South-South</td></tr>
+      <tr><td>LC10</td><td>Delta</td><td>South-South</td></tr>
+   
+    </tbody>
+  </table>
+</div>
+
+
+<br><br>
+
+<div class="table-header">
+  <h2 class="table-title">Customer Demographics Overview</h2>
+ <a href="data/original_data.xlsx" class="download-btn">⬇️ Download Data</a>
+</div>
+
+<div class="table-wrapper">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Customer ID</th>
+        <th>Gender</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>CS-1029312</td><td>Women</td><td>44</td></tr>
+      <tr><td>CS-2183842</td><td>Women</td><td>29</td></tr>
+      <tr><td>CS-1641533</td><td>Women</td><td>67</td></tr>
+      <tr><td>CS-7490807</td><td>Women</td><td>20</td></tr>
+      <tr><td>CS-9293516</td><td>Women</td><td>62</td></tr>
+      <tr><td>CS-1298130</td><td>Men</td><td>49</td></tr>
+      <tr><td>CS-5561216</td><td>Women</td><td>70</td></tr>
+      <tr><td>CS-2935263</td><td>Women</td><td>75</td></tr>
+      <tr><td>CS-2648970</td><td>Women</td><td>43</td></tr>
+      <tr><td>CS-265357</td><td>Women</td><td>18</td></tr>
+      <tr><td>CS-9268874</td><td>Men</td><td>44</td></tr>
+      <tr><td>CS-442660</td><td>Women</td><td>52</td></tr>
+      <tr><td>CS-7482261</td><td>Women</td><td>18</td></tr>
+      <tr><td>CS-7039962</td><td>Men</td><td>30</td></tr>
+      <tr><td>CS-3422488</td><td>Women</td><td>48</td></tr>
+      <tr><td>CS-8974687</td><td>Men</td><td>24</td></tr>
+      <tr><td>CS-244536</td><td>Women</td><td>46</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<br><br>
+
+<h4 style="color:white;"> Tools Used </h4>
+ <hr style="color:white; background-color:white;">
+
+
+<button class="btn btn-sm mb-2" style="background-color:#8e2de2; color:white;"> Microsoft Excel </button>
+<button class="btn btn-sm mb-2" style="background-color:#e22d2d; color:white;"> VLOOKUP & IF Statements </button>
+<button class="btn btn-sm mb-2" style="background-color:#1bb923; color:white;"> Pivot Charts </button>
+<button class="btn btn-sm mb-2" style="background-color:#2d5de2; color:white;"> Slicers </button>
+
+<br><br>
+
+
+<h4 style="color:white;"> Project Areas </h4>
+ <hr style="color:white; background-color:white;">
+
+
+<button class="btn btn-sm mb-2" style="background-color:#8e2de2; color:white;"> Customer Segmentation </button>
+<button class="btn btn-sm mb-2" style="background-color:#e22d2d; color:white;"> Sales Forecasting </button>
+<button class="btn btn-sm mb-2" style="background-color:#1bb923; color:white;"> Product Performance </button>
+<button class="btn btn-sm mb-2" style="background-color:#2d5de2; color:white;"> Channel & Regional Analysis </button>
+<button class="btn btn-sm mb-2" style="background-color:#ff1100; color:white;">Data Storytelling & Visualization </button>
+
+
+
+<br><br>
+
+
+<h4 style="color:white;"> What I Did </h4>
+ <hr style="color:white; background-color:white;">
+
+ <h5> 1. Customer Behavior & Segmentation </h5>
+<p style="color:white; font-size:18px; ">
+I categorized all customers by age group and gender, revealing that young women (18–30) were driving the highest revenue. This insight directly shaped the client’s marketing strategy and product direction.
+
+</p>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+     <img src="img/agegroup.png" class="img-fluid zoomable" >
+
+     <br>
+     <br>
+ <h5 class="text-center"> Revenue by Age Group </h5>
+</div>
+
+<div class="col-md-6 mb-3">
+     <img src="img/salesbygender.png" class="img-fluid zoomable" >
+     <br><br>
+      <h5 class="text-center"> Sales By Gender </h5>
+</div>
+
+
+</div>
+<br>
+<br>
+
+ <h5> 2. Channel & Regional Performance </h5>
+<p style="color:white; font-size:18px; ">
+Using slicers and dynamic visuals, I compared online vs in-store sales and uncovered that online alone generated ₦11.5M. Regional trends also pointed to the North-East as the top-performing zone in terms of average spend.
+
+</p>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+     <img src="img/channel.png" class="img-fluid zoomable" >
+
+     <br>
+     <br>
+ <h5 class="text-center"> Sales Channel </h5>
+</div>
+
+<div class="col-md-6 mb-3">
+     <img src="img/region.png" class="img-fluid zoomable" >
+     <br><br>
+      <h5 class="text-center"> Average Revenue by Region </h5>
+</div>
+
+
+</div>
+
+
+<br>
+<br>
+
+ <h5> 3. Trend Analysis & Forecasting </h5>
+<p style="color:white; font-size:18px; ">
+With custom month extraction and revenue aggregation, I revealed March as the peak month—prompting the client to review seasonal campaigns and launch smarter promotion cycles.
+
+</p>
+
+<br>
+
+
+<center>
+
+     <img src="img/salesbymonth.png" class="img-fluid zoomable" >
+
+</center>
+
+     <br>
+     <br>
+ <h5 class="text-center"> Sales by Month </h5>
+
+
+
+<br>
+<br>
+
+ <h5> 4. Dashboard Design </h5>
+<p style="color:white; font-size:18px; ">
+The final output was an interactive, filterable dashboard with real-time visuals—suitable for any business leader to make informed decisions without sifting through rows of data.
+
+</p>
+
+<br>
+
+
+<center>
+
+     <img src="img/dashboard.png" class="img-fluid zoomable" >
+
+</center>
+
+     <br>
+     <br>
+ <h5 class="text-center"> Dashboard </h5>
+
+
+<br><br>
+
+<div class="table-header">
+  <h2 class="table-title">📌 Vintage Clothing Data Overview</h2>
+<a href="data/revenue_trend_project.xlsx" class="download-btn">⬇️ Download Data</a>
+</div>
+
+<div class="table-wrapper">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Customer ID</th>
+        <th>Sale Month</th>
+        <th>Status</th>
+        <th>Channel</th>
+        <th>Product Category</th>
+        <th>Qty</th>
+        <th>Total Paid</th>
+        <th>Payment Method</th>
+        <th>State</th>
+        <th>Region</th>
+        <th>Age Group</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>171-1029312-3038738</td><td>CS-1029312</td><td>December</td><td>Delivered</td><td>Store</td><td>Denim</td><td>1</td><td>£376</td><td>Card</td><td>Abia</td><td>South-East</td><td>Middle-aged Adult</td><td>Women</td></tr>
+      <tr><td>405-2183842-2225946</td><td>CS-2183842</td><td>December</td><td>Delivered</td><td>Online</td><td>Suit</td><td>1</td><td>£1,449</td><td>Transfer</td><td>Adamawa</td><td>North-East</td><td>Young Adult</td><td>Women</td></tr>
+      <tr><td>171-1641533-8921966</td><td>CS-1641533</td><td>December</td><td>Delivered</td><td>Store</td><td>Suit</td><td>1</td><td>£453</td><td>Transfer</td><td>Akwa Ibom</td><td>South-South</td><td>Elderly</td><td>Women</td></tr>
+      <tr><td>404-7490807-6300351</td><td>CS-7490807</td><td>December</td><td>Delivered</td><td>Online</td><td>Suit</td><td>1</td><td>£729</td><td>Cash</td><td>Anambra</td><td>South-East</td><td>Young Adult</td><td>Women</td></tr>
+      <tr><td>403-9293516-4577154</td><td>CS-9293516</td><td>December</td><td>Delivered</td><td>Store</td><td>Denim</td><td>1</td><td>£544</td><td>Card</td><td>Adamawa</td><td>North-East</td><td>Elderly</td><td>Women</td></tr>
+      <tr><td>171-5561216-3398711</td><td>CS-5561216</td><td>December</td><td>Delivered</td><td>Vendor</td><td>Denim</td><td>1</td><td>£435</td><td>Transfer</td><td>Adamawa</td><td>North-East</td><td>Elderly</td><td>Women</td></tr>
+      <tr><td>408-2935263-2935550</td><td>CS-2935263</td><td>December</td><td>Delivered</td><td>Online</td><td>Denim</td><td>1</td><td>£385</td><td>Card</td><td>Bayelsa</td><td>South-South</td><td>Elderly</td><td>Women</td></tr>
+      <tr><td>408-0265357-4939534</td><td>CS-265357</td><td>December</td><td>Delivered</td><td>Online</td><td>Suit</td><td>1</td><td>£786</td><td>Cash</td><td>Cross River</td><td>South-South</td><td>Young Adult</td><td>Women</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<br><br>
+
+<section class="py-5">
+    <div class="container text-white">
+      <h2 class=" text-center fw-bold">Key Wins</h2>
+ <hr style="color:white; background-color:white;">
+<br>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Identified N5.9M in sales from young adults (18-30)</h5>
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Denim generated over N5M -  top-performing category</h5>
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title">Suggested restocking, bundling, and digital campaign optimization</h5>
+          
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-white glow-card">
+            <div class="card-body">
+              <div class="display-4 mb-3">✅</div>
+              <h5 class="card-title"> Designed clean visuals and slicers for stakeholder interaction </h5>
+          
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </section>
+
+<br><br>
+<h2 class="recommendation-title">📌 Business Insights & Recommendations</h2>
+<div class="recommendation-section">
+    
+
+
+    <h2> Recommendation</h2>
+    <p style="font-size:17px;"> Explore <u>pricing, product mix, and buyer behavior</u> in this region to maximize revenue potential and optimize inventory planning.</p>
+
+     <hr style="color:white; background-color:white;">
+
+     <h2> What I Learned </h2>
+      <hr style="color:white; background-color:white;">
+    <ul class="styled-list">
+      <li>⚡ Applying Excel functions to real-world business questions</li>
+      <li>📊 Building dashboards that visually communicate insights interactively</li>
+      <li>💡 Transforming raw data into strategic **business recommendations</li>
+    </ul>
+  </div>
+
+
+
+</div>
+
+
+   
+<div style="margin-top:50px"></div>
+
+<div class="container" >
+<center> <img src="img/picture2.png" class="img-fluid" width="250px"> </center>
+<br>
+
+    <h1 style="color:white; text-align:center;"> CONTACT ME, LET'S GET TO WORK </h1>
+
+    <center>  <a class="btn btn-lg" href="mailto:rachealaina081@gmail.com" target="_blank" style=" padding: 30px; color: #ff00aa; border:3px solid #8400f0; border-radius:80px; text-transform: none; width: auto;"   > rachealaina081@gmail.com </a>
+</center>
+
+
+<footer class="bg text-center text-white" id="contact" >
+<div style="margin-bottom: 30px;"></div>
+        <p style="color: white; text-align:center;"> Connect with me via social media links </p>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+         
+        
+
+
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/racheal-aina/" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/Racheal83" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+
+        
+
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="mailto:rachealaina081@gmail.com" role="button"
+                      ><i class="fab fa-google"></i
+                    ></a>
+
+                    
+                 
+        </section>
+        <!-- Section: Social media -->
+
+
+
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2025 Copyright:
+        <a class="text-white" href="index.html">Racheal Aina Portfolio </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll('.progress-bar.animated-bar');
+
+    bars.forEach(bar => {
+      // Add init class to start at 0 width
+      bar.classList.add('progress-bar-init');
+
+      // Set the width to 0 explicitly for good measure
+      bar.style.width = '0';
+
+      const targetWidth = bar.getAttribute('data-width') + '%';
+
+      // Trigger animation after short delay
+      setTimeout(() => {
+        bar.classList.remove('progress-bar-init'); // Remove class to allow width transition
+        bar.style.width = targetWidth; // Set to target width
+      }, 100);
+    });
+  });
+</script>
+<script>
+const navLinks = document.querySelectorAll(".nav-link");
+
+for (const navLink of navLinks) {
+  navLink.addEventListener("mouseover", function() {
+    navLink.classList.add("active");
+  });
+
+  navLink.addEventListener("mouseout", function() {
+    navLink.classList.remove("active");
+  });
+}
+
+</script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+></script>
+</body>
+</html>
