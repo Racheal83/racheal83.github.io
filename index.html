@@ -1384,19 +1384,19 @@ The final output was an interactive, filterable dashboard with real-time visuals
         <li>Metrics calculated: Profitability, Revenue, Tax impact, Product & Regional performance.</li>
         <li>Time-based analysis: monthly & quarterly trends, year-over-year.</li>
            <li>DAX queries for computed measures, including:
-          <ul class="nested-list">
-            <li><code>Total Revenue = SUM(Sales[Revenue])</code></li>
-            <li><code>Total Profit = SUM(Sales[Profit])</code></li>
-            <li><code>Gross Sales = SUM(Sales[Gross Sales])</code></li>
-            <li><code>Tax on Profit = SUM(Sales[Tax])</code></li>
-            <li><code>Profit Before Tax = SUM(Sales[Profit]) + SUM(Sales[Tax])</code></li>
-            <li><code>Segment Contribution % =
+          <ul class="nested-list" style="color:white;">
+            <li style="color:white;"><code>Total Revenue = SUM(Sales[Revenue])</code></li>
+            <li style="color:white;"><code>Total Profit = SUM(Sales[Profit])</code></li>
+            <li style="color:white;"><code>Gross Sales = SUM(Sales[Gross Sales])</code></li>
+            <li style="color:white;"><code>Tax on Profit = SUM(Sales[Tax])</code></li>
+            <li style="color:white;"><code>Profit Before Tax = SUM(Sales[Profit]) + SUM(Sales[Tax])</code></li>
+            <li style="color:white;"><code>Segment Contribution % =
                 DIVIDE(
                     SUM(Sales[Profit]),
                     CALCULATE(SUM(Sales[Profit]), ALL(Sales[Segment])),
                 0)
             </code></li>
-            <li><code>Product Contribution =
+            <li style="color:white;"><code>Product Contribution =
                 DIVIDE(
                     SUM(Sales[Gross Sales]),
                     CALCULATE(SUM(Sales[Gross Sales]), ALL(Sales[Product])),
